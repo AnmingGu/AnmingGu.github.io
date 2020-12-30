@@ -1,4 +1,9 @@
 /* nav bar*/
+h1 {
+    font: 40px/1.1em 'opensans-bold', sans-serif;
+}
+
+
 ul {
     position: -webkit-sticky; 
     position: sticky;
@@ -25,20 +30,19 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-  
-  /* Change the link color to #111 (black) on hover */
+
 li a:hover {
     background-color: #111;
 }
 
-.active {
-    background-color: #4CAF50;
-}   
+
 
 /* Home Section */
 #home {
     position: relative;
-    height: 700px;
+    margin: 0;
+    padding: 0;
+    height: 800px;
     min-height: 500px;
     width: 100%;
     background: #161415 url(../images/bg4.png) no-repeat top center;
@@ -58,6 +62,8 @@ li a:hover {
 
 #home h2 {
     font: 30px/1.1em 'opensans-bold', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 10px;
     letter-spacing: 2px;
     margin: 0 auto 18px auto;
@@ -68,7 +74,7 @@ li a:hover {
 #about {
     text-align: left;
     background: #2B2B2B;
-    min-height: 500px;
+    min-height: 200px;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 40px;
@@ -82,16 +88,57 @@ li a:hover {
     margin-bottom: 12px;
 }
 
- #about .social {
-    margin: 24px 0;
-    padding: 0;
-    font-size: 30px;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
-}
-#about .social li {
+#about social li {
+    padding-left: 80px;
+    position: relative;
+    list-style: none;
+    height: 48px;
     display: inline-block;
-    margin: 0 15px;
-    padding: 0;
+ }
+ 
+ /* Links */
+ #about social li {
+ 
+ /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+    text-decoration: none;
+    text-align: right;
+    color: #fff;
+ 
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
 }
-#about .social li a { color: #fff; }
-#about .social li a:hover { color: #02ffb7; }
+
+
+
+#education {
+    text-align: left;
+    background: #ffffff;
+    min-height: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 66px;
+    overflow: hidden;
+}
+
+#education h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 12px;
+
+}
+
+#education h3 {
+    font: 12px/20px 'opensans-bold', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 12px;
+}
+
+
+ 
