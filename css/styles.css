@@ -1,0 +1,97 @@
+/* nav bar*/
+ul {
+    position: -webkit-sticky; 
+    position: sticky;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #949090;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}   
+
+/* Home Section */
+#home {
+    position: relative;
+    height: 700px;
+    min-height: 500px;
+    width: 100%;
+    background: #161415 url(../images/bg4.png) no-repeat top center;
+    background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+}
+
+#home  h1 {
+    font: 80px/1.1em 'opensans-bold', sans-serif;
+    color: #fff;
+    padding-top: 260px;
+    letter-spacing: 2px;
+    margin: 0 auto 18px auto;
+    text-shadow: 2px 3px 30px rgba(187, 182, 182, 0.8);
+}
+
+#home h2 {
+    font: 30px/1.1em 'opensans-bold', sans-serif;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    margin: 0 auto 18px auto;
+}
+
+
+/* About Section */
+#about {
+    text-align: left;
+    background: #2B2B2B;
+    min-height: 500px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 66px;
+    overflow: hidden;
+}
+ 
+ #about h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+ #about .social {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+#about .social li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+}
+#about .social li a { color: #fff; }
+#about .social li a:hover { color: #02ffb7; }
