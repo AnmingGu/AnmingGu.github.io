@@ -1,0 +1,148 @@
+/* nav bar*/
+body {
+    margin: 0;
+}
+
+h1 {
+    font: 40px/1.1em 'opensans-bold', sans-serif;
+}
+
+
+ul {
+    position: -webkit-sticky; 
+    position: sticky;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #949090;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+/* Home Section */
+#home {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    min-height: 500px;
+    width: 100%;
+    background: #161415 url(../images/bg4.png) no-repeat top center;
+    background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+}
+
+#home  h1 {
+    font: 80px/1.1em 'opensans-bold', sans-serif;
+    color: #fff;
+    padding-top: 260px;
+    letter-spacing: 2px;
+    margin: 0 auto 18px auto;
+    text-shadow: 2px 3px 30px rgba(187, 182, 182, 0.8);
+}
+
+#home h2 {
+    font: 30px/1.1em 'opensans-bold', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    margin: 0 auto 18px auto;
+}
+
+
+/* About Section */
+#about {
+    text-align: left;
+    background: #2B2B2B;
+    min-height: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 66px;
+    overflow: hidden;
+}
+ 
+ #about h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+
+
+#about social li {
+    padding-left: 80px;
+    position: relative;
+    list-style: none;
+    height: 48px;
+    display: inline-block;
+ }
+ 
+ /* Links */
+ #about social li {
+ 
+ /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+    text-decoration: none;
+    text-align: right;
+    color: #fff;
+ 
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+
+
+#education {
+    text-align: left;
+    background: #ffffff;
+    min-height: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 66px;
+    overflow: hidden;
+}
+
+#education h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 12px;
+
+}
+
+#education h3 {
+    font: 12px/20px 'opensans-bold', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 12px;
+}
