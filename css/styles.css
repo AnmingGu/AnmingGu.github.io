@@ -224,17 +224,21 @@ li a:hover {
     width: 50%;
   }
 
-.column {
+.column-l{
     float: left;
     width: 50%;
 }
+.column-r{
+    float: right;
+    width: 50%;
+}
 
-/* Clear floats after the columns */
+/* Clear floats after the columns
 .row:after {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 img {
     display: block;
