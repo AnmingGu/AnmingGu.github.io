@@ -224,12 +224,13 @@ li a:hover {
     width: 50%;
   }
 
-.column-l{
+#projects .column {
     float: left;
+} 
+#projects .left {
     width: 50%;
 }
-.column-r{
-    float: right;
+#projects .right {
     width: 50%;
 }
 
