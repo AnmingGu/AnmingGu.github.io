@@ -163,6 +163,12 @@ li a:hover {
     overflow: hidden;
 }
 
+#experiences h3 {
+    font: 18px/20px 'opensans-bold', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 12px;
+}
+
 #projects {
     text-align: left;
     background: #ffffff;
