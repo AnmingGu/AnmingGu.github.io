@@ -100,11 +100,11 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- <img src="images/scaling_checkpoint.png" alt="scaling_checkpoint" width="160" height="120">
+              <img src="images/scaling_checkpoint.png" alt="scaling_checkpoint" width="160" height="120">
             </td>
             <td width="75%" valign="middle">
               <a>
-                <papertitle>A scaling law for generalization bounds of LLMs</papertitle>
+                <papertitle>Larger Language Models Provably Generalize Better</papertitle>
               </a>
               <br>
               Marc Anton Finzi, Sanyam Kapoor, Diego Granziol, Anming Gu, Andrew Gordon Wilson, J Zico Kolter, Christopher De Sa
@@ -114,14 +114,14 @@
               link to come / code to come
               <br>
               <p>
-                We develop generalization bounds on the pretraining objective of LLMs which show for the first time that the generalization gap gets smaller with an increasing computational budget. In compute optimal scaling the number of parameters per token is roughly constant. However, we show we should in principle expect larger models to generalize better due to a combination of a decreased loss variance from better fitting of the data distribution, and fewer required bits per parameter for quantization due to the Hessian spectrum. We use these theoretical findings combined with their empirical values to construct a scaling law for the generalization gap of LLMs, for the first time theoretically explaining the prevalent empirical scaling laws that have guided model development in practice.
+                Why do larger language models generalize better? To address this question, we develop generalization bounds on the LLM pretraining objective in the compute optimal regime. We prove a novel fully empirical Freedman-type martingale concentration inequality, tightening existing bounds to account for the low loss variance. With larger models this variance decreases, meaning that our generalization bounds can even get tighter as the models get larger. We pair these findings with an analysis of the theoretically achievable quantization bitrates based on the Hessian of the loss function, controlling the other component of the bounded gap. With these results, we move towards a more complete understanding of why LLMs generalize.
               </p>
             </td>
           <tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"> -->
+            <td style="padding:20px;width:25%;vertical-align:middle"> --> -->
               <img src="images/kmixup.png" alt="kmixup" width="160" height="160">
             </td>
             <td width="75%" valign="middle">
