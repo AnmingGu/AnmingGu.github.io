@@ -21,25 +21,10 @@
                 <name>Anming Gu</name>
               </p>
               <p>
-                I'm an incoming PhD student at <a href="https://www.cs.utexas.edu/">UT Austin</a>, advised by <a href="https://kjtian.github.io/"> Kevin Tian</a>. I recently graduated from <a href="https://www.bu.edu/cs/">Boston University</a>, where I worked with <a href="https://cs-people.bu.edu/edchien/">Edward Chien</a> and <a href="https://kgreenewald.github.io/">Kristjan Greenewald</a> on optimal transport for machine learning.
+                I'm a first-year Ph.D. student at <a href="https://www.cs.utexas.edu/">UT Austin</a>, advised by <a href="https://kjtian.github.io/"> Kevin Tian</a>. Previously, I graduated from <a href="https://www.bu.edu/cs/">Boston University</a>, where I worked with <a href="https://cs-people.bu.edu/edchien/">Edward Chien</a> and <a href="https://kgreenewald.github.io/">Kristjan Greenewald</a> on optimal transport for machine learning.
               </p>
               <p>
-                My graduate coursework includes:
-                <ul>
-                  <li>Mathematics: Functional Analysis, Stochastic Calculus, Mathematics of Deep Learning, PDEs, Stochastic PDEs</li>
-                  <li>Computer Science: Complexity Theory, Mathematical Methods for Theoretical Computer Science</li>
-                </ul>
-              </p>
-
-              <p>
-                Teaching experience: 
-                <ul>
-                  <li>Algorithmic Data Mining, S25</li>
-                  <li>Analysis of Algorithms, S22, F24, S25</li>
-                  <li>Algebraic Algorithms, F24</li>
-                  <li>Theory of Computation, S24</li>
-                  <li>Concepts of Programming Languages, F23</li>
-                </ul>
+                I'm interested in optimal transport, optimization/sampling, robust statistics, and differential privacy. I'm also more broadly interested in problems at the intersection of probability, theoretical computer science, and machine learning.
               </p>
               <p style="text-align:center">
                 <a href="data/CV.pdf">CV</a> &nbsp/&nbsp
@@ -57,106 +42,40 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                I'm interested in optimal transport, optimization/sampling, robust statistics, and differential privacy. I'm also more broadly interested in problems at the intersection of probability, theoretical computer science, and machine learning.
-              </p>
-              <!-- <p>
-                Currently, I'm working on:
-                <ul>
-                  <li>Differentially private trajectory inference</li>
-                  <li>Asymptotic rate of convergence the mean-field Langevin (MFL) distribution to the true path-space distribution from <a href="https://arxiv.org/abs/2205.07146">this paper</a></li> -->
-                  <!-- <li>Differentially private Wasserstein barycenters</li> -->
-                  <!-- <li>Convergence of Riemannian Langevin algorithm in Rényi divergence</li> -->
-                  <!-- <li>Convergence of the mean-field Langevin algorithm in Rényi divergence</li> -->
-                  <!-- <li>Applying Schrödinger bridges and differential privacy for diffusion models</li> -->
-                <!-- </ul> -->
-              <!-- </p> -->
-              <p>
-                General research directions that seem interesting to me: 
-                <ul>
-                  <li>Applications of sampling: diffusion, functional inequalities, spin glasses, and stochastic localization</li>
-                  <li>Interplay between differential privacy and robust statistic, e.g. private and robust mean estimation, linear regression, and PCA.</li>
-                  <li>Notions of average-case DP, e.g. DP algorithms with public data</li>
-                  <li>End-to-end guarantees for diffusion models under differential privacy</li>
-                </ul>
-                (α-β) denotes alphabetical order, * denotes equal contribution, and ‡ denotes student advising
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/private_traj_inference.png" alt="private_traj_inference" width="160" height="160">
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://www.arxiv.org/abs/2506.12203">
-                  <papertitle>Private Continuous-Time Synthetic Trajectory Generation via Mean-Field Langevin Dynamics 	</papertitle>
-                </a>
-                <br>
-                 Anming Gu, Edward Chien, Kristjan Greenewald
-                <br>
-                Under review.
-                <br>
-                <a href="https://www.arxiv.org/abs/2506.12203">arXiv</a>
-                <p>
-                  We provide an algorithm to privately generate continuous-time data (e.g. marginals from stochastic differential equations) by leveraging the connections between trajectory inference and continuous-time synthetic data generation, along with a computational method based on mean-field Langevin dynamics. Our method has strong utility guarantees under the setting where each person contributes data for only one time point, while prior methods require each person to contribute their entire temporal trajectory.
-                </p>
-              </td>
-            <tr>
-        </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/mmfld.png" alt="MMFLD" width="160" height="120">
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://www.arxiv.org/abs/2505.02621">
-                  <papertitle>Mirror Mean-Field Langevin Dynamics</papertitle>
-                </a>
-                <br>
-                 Anming Gu*, Juno Kim*
-                <br>
-                Under review.
-                <br>
-                <a href="https://www.arxiv.org/abs/2505.02621">arXiv</a>
-                <p>
-                  The mean-field Langevin dynamics minimizes an entropy-regularized nonlinear convex functional over Wasserstein space. It has gained attention recently due to its connection to noisy gradient descent for mean-field two-layer neural networks. We extend the analysis of mean-field Langevin dynamics to the mirror mean-field Langevin dynamics setting, where optimization is constrained to a convex subset of Euclidean space.
-                </p>
-              </td>
-            <tr>
-          <!---</tbody></table>
-                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                    <tr>
-                      <td style="padding:20px;width:25%;vertical-align:middle">
-                        <img src="images/private.png" alt="private" width="160" height="120">
-                      </td>
-                      <td width="75%" valign="middle">
-                        <a>
-                          <papertitle>Differentially Private Wasserstein Barycenters</papertitle>
-                        </a>
-                        <br>
-                        (α-β) Mark Bun, Edward Chien, Kristjan Greenewald, Anming Gu, Sasidhar Kunapuli‡
-                        <br>
-                        In preparation.
-                        <br>
-                        link to come / code to come
-                        <br>
-                        <p>
-                          A Wasserstein barycenter is the mean of a set of probability measures under the optimal transport metric, and it has numerous applications spanning machine learning, statistics, and computer graphics. In applications, the input measures are often empirical distributions formed from datasets, hence privatizing the output barycenter is desired if the input datasets contain sensitive records. We provide the first differentially private algorithms for approximate computation of Wasserstein barycenters between empirical distributions.
-                        </p>
-                      </td>
-                    <tr>
-                  </tbody></table> -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/scaling_checkpoint.png" alt="scaling_checkpoint" width="160" height="120">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://openreview.net/forum?id=MF7ljU8xcf">
-                <papertitle>Compute-Optimal LLMs Provably Generalize Better with Scale</papertitle>
+              <heading>Publications</heading>
+              <p>(α-β) denotes alphabetical order, * denotes equal contribution, and ‡ denotes student advising</p>
+              <b >
+              Differentially Private Wasserstein Barycenters
+              </b>
+              <br>
+              Anming Gu, Sasidhar Kunapuli‡, Edward Chien, Mark Bun, Kristjan Greenewald
+              <br>
+              In submission
+              <br>
+              <a href="https://www.arxiv.org/abs/2506.12203">arXiv</a>
+              <br><br>
+              <a href="https://www.arxiv.org/abs/2506.12203" style="font-weight: bold;">
+                Private Continuous-Time Synthetic Trajectory Generation via Mean-Field Langevin Dynamics
+              </a>
+              <br>
+              Anming Gu, Edward Chien, Kristjan Greenewald
+              <br>
+              In submission
+              <br>
+              <a href="https://www.arxiv.org/abs/2506.12203">arXiv</a>
+              <br><br>
+              <a href="https://www.arxiv.org/abs/2505.02621" style="font-weight: bold;">
+                Mirror Mean-Field Langevin Dynamics
+              </a>
+              <br>
+              Anming Gu*, Juno Kim*
+              <br>
+              In submission
+              <br>
+              <a href="https://www.arxiv.org/abs/2505.02621">arXiv</a>
+              <br><br>
+              <a href="https://openreview.net/forum?id=MF7ljU8xcf" style="font-weight: bold;">
+                Compute-Optimal LLMs Provably Generalize Better with Scale
               </a>
               <br>
               Marc Anton Finzi, Sanyam Kapoor, Diego Granziol, Anming Gu, Christopher De Sa, J Zico Kolter, Andrew Gordon Wilson
@@ -164,21 +83,9 @@
               International Conference on Learning Representations, 2025.
               <br>
               <a href="https://arxiv.org/abs/2504.15208">arXiv</a>
-              <br>
-              <p>
-                We develop generalization bounds on the LLM pretraining objective in the compute optimal regime. We prove a novel fully empirical Freedman-type martingale concentration inequality, tightening existing bounds to account for the low loss variance. With larger models this variance decreases, meaning that our generalization bounds can even get tighter as the models get larger. We pair these findings with an analysis of the theoretically achievable quantization bitrates based on the Hessian of the loss function, controlling the other component of the bounded gap. 
-              </p>
-            </td>
-          <tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/traj_inference.png" alt="traj_inference" width="160" height="160">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://openreview.net/forum?id=H8hO3T3DYe">
-                <papertitle>Partially Observed Trajectory Inference using Optimal Transport and a Dynamics Prior</papertitle>
+              <br><br>
+              <a href="https://openreview.net/forum?id=H8hO3T3DYe" style="font-weight: bold;">
+                Partially Observed Trajectory Inference using Optimal Transport and a Dynamics Prior
               </a>
               <br>
               Anming Gu, Edward Chien, Kristjan Greenewald
@@ -188,54 +95,21 @@
               Preliminary version in OPT Workshop on Optimization for Machine Learning, 2024. [<a href="https://opt-ml.org/papers/2024/paper34.pdf">link</a>]
               <br>
                <a href="https://arxiv.org/abs/2406.07475">arXiv</a> / <a href="https://github.com/AnmingGu/partially-observed-traj-inference">code</a> / <a href="data/partially_observed_ot.pdf">poster</a>
-              <p>
-                Trajectory inference is the problem of recovering a stochastic process from temporal marginals. We consider the setting when we cannot observe the process directly but we have access to a known velocity field. Using tools in optimal transport, stochastic calculus, and optimization theory, we show that a minimum entropy estimator will recover the latent trajectory of the process. We provide theoretical guarantees that our estimator will converge to the ground truth as the number of observations becomes dense in the time domain. We also provide empirical results to show the robustness of our method.
-              </p>
-            </td>
-          <tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/kmixup.png" alt="kmixup" width="160" height="160">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://openreview.net/forum?id=lOegPKSu04">
-                <papertitle>k-Mixup Regularization for Deep Learning via Optimal Transport</papertitle>
+              <br><br>
+              <a href="https://openreview.net/forum?id=lOegPKSu04" style="font-weight: bold;">
+                k-Mixup Regularization for Deep Learning via Optimal Transport
               </a>
               <br>
               Kristjan Greenewald, Anming Gu, Mikhail Yurochkin, Justin Solomon, Edward Chien
               <br>
               Transactions on Machine Learning Research, 2023.
-              <br>
-              <a href="https://arxiv.org/abs/2106.02933">arXiv</a> / <a href="https://github.com/AnmingGu/kmixup-cifar10">code</a>
-              <p>
-                Mixup is a regularization technique for training neural networks that perturbs input training data in the direction of other randomly chosen training data. We propose a new variant of mixup that uses optimal transport to perturb training data in the direction of other training data that are more similar to the input data. We show theoretically and experimentally that our method is more effective than mixup at improving generalization performance.
-              </p>
-            </td>
-          </tr>
-          
-        </tbody></table>
-
-        <!-- <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>Course Notes</heading>
-            <p>
-              Inspired by <a href="https://www.ekzhang.com/">Eric Zhang</a>
-            </p>
-            <ul>
-              <li><a href="notes/functional_analysis.pdf">Functional Analysis</a></li>
-              <li><a href="notes/financial_econometrics.pdf">Financial Econometrics</a></li>
-            </ul>
-          </td>
-        </tr> -->
+               <a href="https://arxiv.org/abs/2106.02933">arXiv</a> / <a href="https://github.com/AnmingGu/kmixup-cifar10">code</a>        
         </tbody></table>
       </tbody></table>
       <table style="width:50%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
           <td style="padding:0px">
             <br>
-            <!-- <p>Fun fact: I probably have the Guinness world record for most rejections from MIT: 2x undergrad (2020, 2022), 3x PhD (2024 EECS, 2025 Math, probably 2025 EECS)</p> -->
             <p style="text-align:right;font-size:small;">
               Template from Jon Barron's <a href="https://github.com/jonbarron/jonbarron_website">webpage</a>
             </p>
