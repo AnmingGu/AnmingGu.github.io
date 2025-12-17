@@ -1,0 +1,55 @@
+name: Deploy Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Stamp last modified (per file)
+        run: |
+          python3 - << 'PY'
+          import pathlib, subprocess, re
+
+          PLACEHOLDER = "__LAST_MODIFIED__"
+          root = pathlib.Path(".")
+          html_files = [p for p in root.rglob("*.html") if ".git" not in p.parts and ".github" not in p.parts]
+
+          def last_modified_yyyymm(path: pathlib.Path) -> str:
+            # last commit that touched this file
+            out = subprocess.check_output(
+              ["git", "log", "-1", "--format=%cd", "--date=format:%Y.%m", "--", str(path)],
+              text=True
+            ).strip()
+            return out or ""
+
+          for p in html_files:
+            txt = p.read_text(encoding="utf-8")
+            if PLACEHOLDER not in txt:
+              continue
+            stamp = last_modified_yyyymm(p)
+            if not stamp:
+              continue
+            p.write_text(txt.replace(PLACEHOLDER, stamp), encoding="utf-8")
+          PY
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - uses: actions/deploy-pages@v4
