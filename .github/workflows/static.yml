@@ -37,7 +37,8 @@ jobs:
               text=True
             ).strip()
             # want to format 2022.01 -> 2022.1
-            out = re.sub(r"(\d+)\.(\d+)", r"\1.\2", out)
+            if out[5] == "0":
+              out = out[:5] + out[6]
             return out or ""
 
           for p in html_files:
