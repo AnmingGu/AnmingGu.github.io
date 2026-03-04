@@ -36,9 +36,6 @@ jobs:
               ["git", "log", "-1", "--format=%cd", "--date=format:%Y.%m", "--", str(path)],
               text=True
             ).strip()
-            # want to format 2022.01 -> 2022.1
-            if out[5] == "0":
-              out = out[:5] + out[6]
             return out or ""
 
           for p in html_files:
