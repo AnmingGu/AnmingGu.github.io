@@ -129,3 +129,36 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.publication-filters {
+  margin-bottom: 16px;
+}
+
+.publication-filters button {
+  margin-right: 6px;
+  padding: 6px 14px;
+  border: 1px solid #1772d0;
+  border-radius: 4px;
+  background: #fff;
+  color: #1772d0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.publication-filters button[aria-pressed="true"] {
+  background: #1772d0;
+  color: #fff;
+}
+
+.publication-filters button:hover {
+  border-color: #f09228;
+}
+
+.publication-filters button:focus-visible {
+  outline: 2px solid #f09228;
+  outline-offset: 3px;
+}
+
+.publication {
+  margin-bottom: 1em;
+}
